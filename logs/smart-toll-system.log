@@ -1,0 +1,584 @@
+2026-04-01T01:24:05.925+05:30  WARN 336 --- [smart-toll-system] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h44m2s835ms571µs100ns).
+2026-04-01T09:06:40.439+05:30  WARN 336 --- [smart-toll-system] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h42m36s429ms838µs400ns).
+2026-04-01T09:33:23.030+05:30  WARN 336 --- [smart-toll-system] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m12s28ms142µs900ns).
+2026-04-01T09:52:10.562+05:30  INFO 336 --- [smart-toll-system] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01T09:52:10.768+05:30  INFO 336 --- [smart-toll-system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-01T09:52:10.947+05:30  INFO 336 --- [smart-toll-system] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-01T09:52:16.505+05:30  INFO 20856 --- [smart-toll-system] [main] c.s.system.SmartTollSystemApplication    : Starting SmartTollSystemApplication using Java 23.0.1 with PID 20856 (C:\Users\shub1\OneDrive\Desktop\SmartToll-CollectionSystem\target\classes started by shub1 in C:\Users\shub1\OneDrive\Desktop\SmartToll-CollectionSystem)
+2026-04-01T09:52:16.515+05:30 DEBUG 20856 --- [smart-toll-system] [main] c.s.system.SmartTollSystemApplication    : Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-04-01T09:52:16.516+05:30  INFO 20856 --- [smart-toll-system] [main] c.s.system.SmartTollSystemApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-04-01T09:52:17.709+05:30  INFO 20856 --- [smart-toll-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-01T09:52:17.813+05:30  INFO 20856 --- [smart-toll-system] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 4 JPA repository interfaces.
+2026-04-01T09:52:18.753+05:30  INFO 20856 --- [smart-toll-system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2026-04-01T09:52:18.774+05:30  INFO 20856 --- [smart-toll-system] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-01T09:52:18.774+05:30  INFO 20856 --- [smart-toll-system] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-04-01T09:52:18.861+05:30  INFO 20856 --- [smart-toll-system] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-01T09:52:18.861+05:30  INFO 20856 --- [smart-toll-system] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2249 ms
+2026-04-01T09:52:19.159+05:30  INFO 20856 --- [smart-toll-system] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-01T09:52:19.261+05:30  INFO 20856 --- [smart-toll-system] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-04-01T09:52:19.301+05:30  INFO 20856 --- [smart-toll-system] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-01T09:52:19.856+05:30  INFO 20856 --- [smart-toll-system] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-01T09:52:19.918+05:30  INFO 20856 --- [smart-toll-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-01T09:52:20.710+05:30  INFO 20856 --- [smart-toll-system] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@401926df
+2026-04-01T09:52:20.714+05:30  INFO 20856 --- [smart-toll-system] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-01T09:52:22.527+05:30  INFO 20856 --- [smart-toll-system] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-01T09:52:22.791+05:30  INFO 20856 --- [smart-toll-system] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01T09:52:23.286+05:30 DEBUG 20856 --- [smart-toll-system] [main] c.s.s.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-04-01T09:52:23.475+05:30  INFO 20856 --- [smart-toll-system] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-04-01T09:52:23.475+05:30  WARN 20856 --- [smart-toll-system] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-04-01T09:52:23.607+05:30  WARN 20856 --- [smart-toll-system] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-01T09:52:24.552+05:30  INFO 20856 --- [smart-toll-system] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2026-04-01T09:52:24.552+05:30  INFO 20856 --- [smart-toll-system] [main] c.s.system.SmartTollSystemApplication    : Started SmartTollSystemApplication in 8.724 seconds (process running for 9.59)
+2026-04-01T09:59:41.390+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-01T09:59:41.430+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-01T09:59:41.637+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 203 ms
+2026-04-01T09:59:55.464+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-7] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T09:59:55.477+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T09:59:55.573+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-10] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T09:59:55.573+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.s.system.controller.UserController     : Fetched 0 transactions for user 3
+2026-04-01T09:59:55.640+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-2] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T09:59:55.673+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-2] c.s.system.controller.UserController     : Fetched 0 transactions for user 3
+2026-04-01T10:00:17.689+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-3] c.s.system.controller.VehicleController  : Registered vehicle HR20AU6812 for owner 3
+2026-04-01T10:00:39.920+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-10] c.s.system.controller.TollController     : Received scan request for RFID tag RFID-0005 at booth null
+2026-04-01T10:00:39.931+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-10] c.smarttoll.system.service.TollService   : Processing toll scan for RFID tag RFID-0005 at booth null / P3
+2026-04-01T10:00:40.082+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-10] c.smarttoll.system.service.TollService   : Toll processed successfully for vehicle HR20AU6812 at booth P3. Remaining balance: 400.00
+2026-04-01T10:01:01.056+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-4] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T10:01:01.066+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-8] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T10:01:01.426+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-7] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T10:01:01.442+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-8] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T10:01:01.507+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-10] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T10:01:01.531+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-10] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T10:01:03.461+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-9] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T10:01:03.464+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-3] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T10:01:03.497+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-3] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T10:01:03.497+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-4] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T10:01:03.543+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-7] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T10:01:03.574+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-7] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T10:01:12.366+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-10] c.s.system.controller.UserController     : Added 100 to wallet for user 3
+2026-04-01T10:02:00.691+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-9] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T10:02:00.710+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-3] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T10:02:00.738+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-3] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T10:02:00.749+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-4] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T10:02:00.783+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-7] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T10:02:00.807+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-7] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T10:10:50.188+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-10] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T10:10:50.188+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-3] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T10:10:50.451+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-10] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T10:10:50.485+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-2] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T10:10:50.569+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-9] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T10:10:50.598+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-9] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T10:11:15.563+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-7] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T10:11:15.573+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-8] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T10:11:15.614+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-8] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T10:11:15.630+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-3] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T10:11:15.666+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-1] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T10:11:15.699+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-1] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T10:12:19.899+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-2] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T10:12:19.910+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-6] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T10:12:19.936+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-6] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T10:12:19.951+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-4] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T10:12:20.025+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-9] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T10:12:20.037+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-9] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T10:12:49.717+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-4] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T10:12:49.719+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-6] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T10:12:49.748+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-6] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T10:12:49.765+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-9] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T10:12:49.790+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T10:12:49.826+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T10:29:17.047+05:30  WARN 20856 --- [smart-toll-system] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m25s782ms119µs300ns).
+2026-04-01T12:43:41.432+05:30  WARN 20856 --- [smart-toll-system] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h14m24s389ms782µs300ns).
+2026-04-01T14:47:22.097+05:30  WARN 20856 --- [smart-toll-system] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=31m7s473ms256µs400ns).
+2026-04-01T15:05:56.323+05:30  WARN 20856 --- [smart-toll-system] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m3s214ms70µs700ns).
+2026-04-01T21:15:26.390+05:30  WARN 20856 --- [smart-toll-system] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h52m24s629ms923µs500ns).
+2026-04-01T21:17:28.227+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-6] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T21:17:28.227+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-8] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T21:17:28.460+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-6] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T21:17:28.532+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-9] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T21:17:28.570+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T21:17:28.601+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T21:17:36.631+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-10] c.s.system.controller.UserController     : Added 100 to wallet for user 3
+2026-04-01T21:24:04.636+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-6] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T21:24:04.652+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T21:24:04.816+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T21:24:04.905+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-3] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T21:24:04.923+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-1] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T21:24:04.940+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-1] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T21:25:09.120+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-10] c.s.system.controller.UserController     : Added 100 to wallet for user 3
+2026-04-01T21:25:19.817+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-6] c.s.system.controller.UserController     : Added 100 to wallet for user 3
+2026-04-01T21:28:49.453+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-8] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T21:28:49.452+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-9] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T21:28:49.505+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-8] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T21:28:49.562+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-10] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T21:28:49.644+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T21:28:49.689+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T21:39:59.840+05:30  WARN 20856 --- [smart-toll-system] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m31s572ms186µs400ns).
+2026-04-01T21:49:30.701+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-10] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T21:49:30.701+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T21:49:30.777+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-3] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T21:49:30.799+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T21:49:30.841+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T21:49:30.862+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T21:49:46.034+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-2] c.s.system.controller.UserController     : Added 100 to wallet for user 3
+2026-04-01T21:49:57.678+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-1] c.s.system.controller.UserController     : Added 100 to wallet for user 3
+2026-04-01T21:51:22.031+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-3] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T21:51:22.031+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-7] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T21:51:22.072+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-6] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T21:51:22.082+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-3] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T21:51:22.132+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T21:51:22.175+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T21:53:29.625+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T21:53:29.582+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-3] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T21:53:30.031+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T21:53:30.032+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-2] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T21:53:30.115+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-4] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T21:53:30.167+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-4] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T21:53:58.639+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-4] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T21:53:58.669+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T21:53:58.684+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-1] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T21:53:58.690+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-5] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T21:53:58.733+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-9] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T21:53:58.755+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-9] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T21:54:01.246+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-7] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T21:54:01.280+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-8] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T21:54:01.320+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-6] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T21:54:01.338+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-8] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T21:54:01.388+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-10] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T21:54:01.420+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-10] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T22:13:49.058+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-10] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T22:13:49.058+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-8] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T22:13:49.149+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-8] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T22:13:49.153+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-2] c.s.system.controller.UserController     : Fetched details for user 3
+2026-04-01T22:13:49.204+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-1] c.smarttoll.system.service.TollService   : Fetching transaction history for user 3
+2026-04-01T22:13:49.223+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-1] c.s.system.controller.UserController     : Fetched 1 transactions for user 3
+2026-04-01T22:14:12.063+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-10] c.s.system.controller.AdminController    : Fetched 6 transactions for admin view
+2026-04-01T22:14:12.145+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-8] c.s.system.controller.AdminController    : Fetched 6 transactions for admin view
+2026-04-01T22:14:12.449+05:30 ERROR 20856 --- [smart-toll-system] [http-nio-9090-exec-2] c.s.s.exception.GlobalExceptionHandler   : Unhandled exception
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:267) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:507) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1284) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.31.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at com.smarttoll.system.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:57) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-04-01T22:14:13.100+05:30 ERROR 20856 --- [smart-toll-system] [http-nio-9090-exec-1] c.s.s.exception.GlobalExceptionHandler   : Unhandled exception
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:267) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:507) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1284) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.31.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at com.smarttoll.system.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:57) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-04-01T22:14:38.138+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-4] c.s.system.controller.AdminController    : Created toll booth NH10 at bihar
+2026-04-01T22:15:07.080+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-8] c.s.system.controller.TollController     : Received scan request for RFID tag RFID-0005 at booth null
+2026-04-01T22:15:07.085+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-8] c.smarttoll.system.service.TollService   : Processing toll scan for RFID tag RFID-0005 at booth null / NH10
+2026-04-01T22:15:07.216+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-8] c.smarttoll.system.service.TollService   : Toll processed successfully for vehicle HR20AU6812 at booth NH10. Remaining balance: 900.00
+2026-04-01T22:15:19.272+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-1] c.s.system.controller.TollController     : Received scan request for RFID tag RFID-0005 at booth null
+2026-04-01T22:15:19.279+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-1] c.smarttoll.system.service.TollService   : Processing toll scan for RFID tag RFID-0005 at booth null / NH10
+2026-04-01T22:15:19.317+05:30  WARN 20856 --- [smart-toll-system] [http-nio-9090-exec-1] c.smarttoll.system.service.TollService   : Duplicate scan detected for vehicle HR20AU6812 at booth NH10 within 60 seconds
+2026-04-01T22:15:19.481+05:30  WARN 20856 --- [smart-toll-system] [http-nio-9090-exec-1] c.s.s.exception.GlobalExceptionHandler   : Fraud detection triggered: Duplicate RFID scan detected within 1 minute
+2026-04-01T22:15:30.296+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-7] c.s.system.controller.TollController     : Received scan request for RFID tag RFID-0002 at booth null
+2026-04-01T22:15:30.296+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-7] c.smarttoll.system.service.TollService   : Processing toll scan for RFID tag RFID-0002 at booth null / NH10
+2026-04-01T22:15:30.412+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-7] c.smarttoll.system.service.TollService   : Toll processed successfully for vehicle HR20AU6816 at booth NH10. Remaining balance: 600.00
+2026-04-01T22:15:34.110+05:30 ERROR 20856 --- [smart-toll-system] [http-nio-9090-exec-1] c.s.s.exception.GlobalExceptionHandler   : Unhandled exception
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:267) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:507) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1284) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.31.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at com.smarttoll.system.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:57) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-04-01T22:15:34.231+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-2] c.s.system.controller.AdminController    : Fetched 8 transactions for admin view
+2026-04-01T22:15:34.205+05:30 ERROR 20856 --- [smart-toll-system] [http-nio-9090-exec-1] c.s.s.exception.GlobalExceptionHandler   : Unhandled exception
+
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:267) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:441) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:382) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:127) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:507) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1284) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1065) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.31.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.31.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at com.smarttoll.system.security.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:57) ~[classes/:na]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.3.4.jar:6.3.4]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.14.jar:6.1.14]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.31.jar:10.1.31]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+2026-04-01T22:15:34.379+05:30  INFO 20856 --- [smart-toll-system] [http-nio-9090-exec-4] c.s.system.controller.AdminController    : Fetched 8 transactions for admin view
+2026-04-01T22:22:41.107+05:30  WARN 20856 --- [smart-toll-system] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s499ms844µs200ns).

@@ -10,9 +10,9 @@ import UserDashboardPage from "./pages/UserDashboardPage";
 
 function App() {
   return (
-    <div className="min-h-screen bg-mist text-ink">
+    <div className="min-h-screen text-ink">
       <Navbar />
-      <main className="mx-auto max-w-6xl px-4 py-8">
+      <main className="mx-auto max-w-6xl px-4 py-6 sm:py-8">
         <Routes>
           <Route path="/" element={<DashboardPage />} />
           <Route path="/login" element={<LoginPage />} />

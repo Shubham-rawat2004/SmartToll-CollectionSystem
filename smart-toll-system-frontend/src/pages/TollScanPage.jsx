@@ -86,38 +86,48 @@ function TollScanPage() {
             Enter an RFID tag and choose a toll booth by name to simulate a live
             scan against the backend toll-processing API.
           </p>
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+            <article className="soft-card">
+              <p className="text-sm text-slate-500">Available Booths</p>
+              <p className="mt-2 text-2xl font-bold text-ink">{tollBooths.length}</p>
+            </article>
+            <article className="soft-card">
+              <p className="text-sm text-slate-500">Scan Mode</p>
+              <p className="mt-2 text-lg font-semibold text-ink">Manual simulation</p>
+            </article>
+          </div>
         </div>
 
-        <div className="rounded-[28px] bg-ink p-8 text-white shadow-[0_20px_60px_-30px_rgba(16,33,43,0.5)]">
+        <div className="form-card bg-white/95">
           <h2 className="text-2xl font-bold">Scan RFID</h2>
-          <p className="mt-3 text-sm leading-7 text-slate-200">
+          <p className="mt-3 text-sm leading-7 text-slate-600">
             Pick from the available toll booths and send the scan directly to
             `/toll/scan`.
           </p>
 
           <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
             <div>
-              <label className="mb-2 block text-sm font-medium text-slate-200">
+              <label className="mb-2 block text-sm font-medium text-slate-700">
                 RFID Tag
               </label>
               <input
                 name="rfidTag"
                 value={form.rfidTag}
                 onChange={handleChange}
-                className="w-full rounded-2xl border border-slate-500 bg-white/10 px-4 py-3 text-white outline-none placeholder:text-slate-300 focus:border-road"
+                className="field-input"
                 placeholder="RFID-0001"
                 required
               />
             </div>
             <div>
-              <label className="mb-2 block text-sm font-medium text-slate-200">
+              <label className="mb-2 block text-sm font-medium text-slate-700">
                 Toll Booth
               </label>
               <select
                 name="tollBoothName"
                 value={form.tollBoothName}
                 onChange={handleChange}
-                className="w-full rounded-2xl border border-slate-500 bg-white/10 px-4 py-3 text-white outline-none focus:border-road"
+                className="field-input"
                 required
                 disabled={boothLoading || !tollBooths.length}
               >
@@ -130,11 +140,14 @@ function TollScanPage() {
                   </option>
                 ))}
               </select>
+              <p className="mt-2 text-xs text-slate-500">
+                Select the booth where this scan is being simulated.
+              </p>
             </div>
             <button
               type="submit"
               disabled={loading || boothLoading || !tollBooths.length}
-              className="w-full rounded-2xl bg-road px-4 py-3 font-semibold text-ink transition hover:bg-amber-300 disabled:cursor-not-allowed disabled:opacity-70"
+              className="w-full rounded-2xl bg-signal px-4 py-3 font-semibold text-white transition hover:bg-ink disabled:cursor-not-allowed disabled:opacity-70"
             >
               {loading ? "Processing..." : "Scan Toll"}
             </button>
@@ -150,10 +163,10 @@ function TollScanPage() {
 
       {result ? (
         <div
-          className={`rounded-3xl p-8 shadow-sm ring-1 ${
+          className={`panel-card ${
             result.success
-              ? "bg-emerald-50 ring-emerald-200"
-              : "bg-rose-50 ring-rose-200"
+              ? "border-emerald-200 bg-emerald-50"
+              : "border-rose-200 bg-rose-50"
           }`}
         >
           <div className="flex flex-wrap items-center gap-3">
@@ -170,25 +183,25 @@ function TollScanPage() {
           </div>
 
           <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-            <article className="rounded-2xl bg-white/80 p-4">
+            <article className="soft-card bg-white/90">
               <p className="text-sm text-slate-500">Vehicle</p>
               <p className="mt-2 font-semibold text-ink">
                 {result.vehicleNumber || "N/A"}
               </p>
             </article>
-            <article className="rounded-2xl bg-white/80 p-4">
+            <article className="soft-card bg-white/90">
               <p className="text-sm text-slate-500">Owner</p>
               <p className="mt-2 font-semibold text-ink">
                 {result.ownerName || "N/A"}
               </p>
             </article>
-            <article className="rounded-2xl bg-white/80 p-4">
+            <article className="soft-card bg-white/90">
               <p className="text-sm text-slate-500">Toll Amount</p>
               <p className="mt-2 font-semibold text-ink">
                 {formatCurrency(result.tollAmount)}
               </p>
             </article>
-            <article className="rounded-2xl bg-white/80 p-4">
+            <article className="soft-card bg-white/90">
               <p className="text-sm text-slate-500">Remaining Balance</p>
               <p className="mt-2 font-semibold text-ink">
                 {formatCurrency(result.remainingBalance)}
@@ -197,13 +210,13 @@ function TollScanPage() {
           </div>
 
           <div className="mt-4 grid gap-4 md:grid-cols-2">
-            <article className="rounded-2xl bg-white/80 p-4">
+            <article className="soft-card bg-white/90">
               <p className="text-sm text-slate-500">Toll Booth</p>
               <p className="mt-2 font-semibold text-ink">
                 {result.tollBoothName || "N/A"}
               </p>
             </article>
-            <article className="rounded-2xl bg-white/80 p-4">
+            <article className="soft-card bg-white/90">
               <p className="text-sm text-slate-500">Timestamp</p>
               <p className="mt-2 font-semibold text-ink">
                 {result.timestamp

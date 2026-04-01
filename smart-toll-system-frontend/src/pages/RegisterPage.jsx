@@ -44,94 +44,126 @@ function RegisterPage() {
   }
 
   return (
-    <section className="mx-auto max-w-lg rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
-      <h1 className="text-2xl font-bold text-ink">Create Account</h1>
-      <p className="mt-2 text-sm text-slate-600">
-        Register a new Smart Toll account and choose the role for this user.
-      </p>
+    <section className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
+      <div className="panel-card bg-gradient-to-br from-signal to-emerald-700 text-white">
+        <p className="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-100">
+          New Account
+        </p>
+        <h1 className="mt-4 text-4xl font-bold tracking-tight">
+          Create a profile and start using Smart Toll quickly.
+        </h1>
+        <p className="mt-4 text-sm leading-7 text-emerald-50">
+          Register your account, choose the role, and set an opening wallet
+          balance so you can move directly into vehicle registration and scanning.
+        </p>
 
-      <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
-        <div>
-          <label className="mb-2 block text-sm font-medium text-slate-700">Name</label>
-          <input
-            name="name"
-            value={form.name}
-            onChange={handleChange}
-            required
-            className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-signal"
-            placeholder="Enter full name"
-          />
-        </div>
-        <div>
-          <label className="mb-2 block text-sm font-medium text-slate-700">Email</label>
-          <input
-            type="email"
-            name="email"
-            value={form.email}
-            onChange={handleChange}
-            required
-            className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-signal"
-            placeholder="you@example.com"
-          />
-        </div>
-        <div>
-          <label className="mb-2 block text-sm font-medium text-slate-700">Password</label>
-          <input
-            type="password"
-            name="password"
-            value={form.password}
-            onChange={handleChange}
-            required
-            className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-signal"
-            placeholder="Create a password"
-          />
-        </div>
-        <div className="grid gap-4 md:grid-cols-2">
-          <div>
-            <label className="mb-2 block text-sm font-medium text-slate-700">Role</label>
-            <select
-              name="role"
-              value={form.role}
-              onChange={handleChange}
-              className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-signal"
-            >
-              <option value="USER">User</option>
-              <option value="ADMIN">Admin</option>
-            </select>
+        <div className="mt-8 space-y-3">
+          <div className="rounded-2xl bg-white/10 px-4 py-3">
+            Simple onboarding with clean validation feedback
           </div>
+          <div className="rounded-2xl bg-white/10 px-4 py-3">
+            Built for both admin and standard user roles
+          </div>
+        </div>
+      </div>
+
+      <div className="form-card mx-auto w-full max-w-2xl">
+        <h1 className="text-3xl font-bold text-ink">Create Account</h1>
+        <p className="mt-2 text-sm text-slate-600">
+          Register a new Smart Toll account and choose the role for this user.
+        </p>
+
+        <form className="mt-8 space-y-5" onSubmit={handleSubmit}>
           <div>
-            <label className="mb-2 block text-sm font-medium text-slate-700">Wallet Balance</label>
+            <label className="mb-2 block text-sm font-medium text-slate-700">Name</label>
             <input
-              type="number"
-              min="0"
-              step="0.01"
-              name="walletBalance"
-              value={form.walletBalance}
+              name="name"
+              value={form.name}
               onChange={handleChange}
-              className="w-full rounded-2xl border border-slate-300 px-4 py-3 outline-none transition focus:border-signal"
-              placeholder="0.00"
+              required
+              className="field-input"
+              placeholder="Enter full name"
             />
           </div>
-        </div>
+          <div>
+            <label className="mb-2 block text-sm font-medium text-slate-700">Email</label>
+            <input
+              type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              required
+              className="field-input"
+              placeholder="you@example.com"
+            />
+          </div>
+          <div>
+            <label className="mb-2 block text-sm font-medium text-slate-700">Password</label>
+            <input
+              type="password"
+              name="password"
+              value={form.password}
+              onChange={handleChange}
+              required
+              className="field-input"
+              placeholder="Create a password"
+            />
+          </div>
+          <div className="grid gap-4 md:grid-cols-2">
+            <div>
+              <label className="mb-2 block text-sm font-medium text-slate-700">Role</label>
+              <select
+                name="role"
+                value={form.role}
+                onChange={handleChange}
+                className="field-input"
+              >
+                <option value="USER">User</option>
+                <option value="ADMIN">Admin</option>
+              </select>
+            </div>
+            <div>
+              <label className="mb-2 block text-sm font-medium text-slate-700">Opening Wallet Balance</label>
+              <input
+                type="number"
+                min="0"
+                step="0.01"
+                name="walletBalance"
+                value={form.walletBalance}
+                onChange={handleChange}
+                className="field-input"
+                placeholder="0.00"
+              />
+            </div>
+          </div>
 
-        {message ? <p className="text-sm font-medium text-emerald-600">{message}</p> : null}
-        {error ? <p className="text-sm font-medium text-rose-600">{error}</p> : null}
+          {message ? (
+            <div className="rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-medium text-emerald-600">
+              {message}
+            </div>
+          ) : null}
+          {error ? (
+            <div className="rounded-2xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm font-medium text-rose-600">
+              {error}
+            </div>
+          ) : null}
 
-        <button
-          type="submit"
-          disabled={loading}
-          className="w-full rounded-2xl bg-signal px-4 py-3 font-semibold text-white transition hover:bg-ink disabled:cursor-not-allowed disabled:opacity-70"
-        >
-          {loading ? "Creating Account..." : "Register"}
-        </button>
-      </form>
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full rounded-2xl bg-signal px-4 py-3 font-semibold text-white transition hover:bg-ink disabled:cursor-not-allowed disabled:opacity-70"
+          >
+            {loading ? "Creating Account..." : "Register"}
+          </button>
+        </form>
 
-      <p className="mt-6 text-sm text-slate-600">
-        Already have an account?{" "}
-        <Link to="/login" className="font-semibold text-signal">
-          Sign in
-        </Link>
-      </p>
+        <p className="mt-6 text-sm text-slate-600">
+          Already have an account?{" "}
+          <Link to="/login" className="font-semibold text-signal">
+            Sign in
+          </Link>
+        </p>
+      </div>
     </section>
   );
 }

@@ -9,7 +9,7 @@ function Navbar() {
       <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="flex items-center justify-between gap-4">
           <Link to="/" className="flex items-center gap-3 text-lg font-semibold tracking-wide text-ink">
-            <span className="flex h-10 w-10 items-center justify-center rounded-2xl bg-ink text-sm font-bold text-white">
+            <span className="flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-to-br from-ink to-signal text-sm font-bold text-white shadow-sm">
               ST
             </span>
             <span>
@@ -51,7 +51,7 @@ function Navbar() {
               >
                 Toll Scan
               </Link>
-              <span className="hidden rounded-full bg-slate-100 px-4 py-2 text-slate-500 lg:inline-flex">
+              <span className="hidden rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-slate-500 lg:inline-flex">
                 {user?.name || user?.email}
               </span>
               <button
