@@ -1,0 +1,16 @@
+package com.smarttoll.system.dto;
+
+import java.math.BigDecimal;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class TollBoothRequest {
+
+    private String name;
+    private String location;
+    private BigDecimal tollAmount;
+}

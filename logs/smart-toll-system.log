@@ -1,0 +1,2 @@
+2026-04-01T01:24:05.925+05:30  WARN 336 --- [smart-toll-system] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h44m2s835ms571µs100ns).
+2026-04-01T09:06:40.439+05:30  WARN 336 --- [smart-toll-system] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h42m36s429ms838µs400ns).

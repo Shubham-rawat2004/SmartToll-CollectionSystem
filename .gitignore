@@ -1,0 +1,13 @@
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+### IDE ###
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+### OS ###
+Thumbs.db
+Desktop.ini
