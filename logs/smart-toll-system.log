@@ -526,3 +526,6 @@
 2026-04-28T11:16:35.743+05:30  INFO 23280 --- [smart-toll-system] [http-nio-9090-exec-7] c.s.system.controller.TollController     : Received ANPR scan request for vehicle HR98AA0000 at booth null / P1
 2026-04-28T11:16:35.754+05:30  INFO 23280 --- [smart-toll-system] [http-nio-9090-exec-7] c.smarttoll.system.service.TollService   : Processing toll scan for vehicle number HR98AA0000 at booth null / P1
 2026-04-28T11:16:35.825+05:30  INFO 23280 --- [smart-toll-system] [http-nio-9090-exec-7] c.smarttoll.system.service.TollService   : Toll processed successfully for vehicle HR98AA0000 at booth P1. Remaining balance: 300.00
+2026-04-28T11:27:30.005+05:30  INFO 23280 --- [smart-toll-system] [http-nio-9090-exec-9] c.s.system.controller.TollController     : Received ANPR scan request for vehicle HR20AU5000 at booth null / P1
+2026-04-28T11:27:30.017+05:30  INFO 23280 --- [smart-toll-system] [http-nio-9090-exec-9] c.smarttoll.system.service.TollService   : Processing toll scan for vehicle number HR20AU5000 at booth null / P1
+2026-04-28T11:27:30.117+05:30  INFO 23280 --- [smart-toll-system] [http-nio-9090-exec-9] c.smarttoll.system.service.TollService   : Toll processed successfully for vehicle HR20AU5000 at booth P1. Remaining balance: 500.00
