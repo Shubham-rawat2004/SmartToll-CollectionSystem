@@ -37,7 +37,11 @@ function RegisterPage() {
       setForm(initialForm);
       setTimeout(() => navigate("/login"), 1000);
     } catch (requestError) {
-      setError(requestError.response?.data?.message || "Unable to register.");
+      setError(
+        requestError.response?.data?.message ||
+          requestError.message ||
+          "Unable to register."
+      );
     } finally {
       setLoading(false);
     }

@@ -54,45 +54,56 @@ function UserDashboardPage() {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
   const [walletLoading, setWalletLoading] = useState(false);
   const [vehicleLoading, setVehicleLoading] = useState(false);
   const [lastRechargeAmount, setLastRechargeAmount] = useState(0);
 
-  useEffect(() => {
-    async function loadDashboard() {
-      if (!userId) {
-        return;
-      }
-
-      setLoading(true);
-      setError("");
-
-      try {
-        const [userDetails, transactionHistory] = await Promise.all([
-          fetchUserDetails(userId),
-          fetchUserTransactions(userId),
-        ]);
-
-        setProfile(userDetails);
-        setTransactions(transactionHistory);
-        updateUser({
-          ...user,
-          name: userDetails.name,
-          email: userDetails.email,
-          role: userDetails.role,
-          walletBalance: userDetails.walletBalance,
-        });
-      } catch (requestError) {
-        setError(
-          requestError.response?.data?.message ||
-            "Unable to load your dashboard right now."
-        );
-      } finally {
-        setLoading(false);
-      }
+  async function loadDashboard(isBackgroundRefresh = false) {
+    if (!userId) {
+      return;
     }
 
+    if (isBackgroundRefresh) {
+      setRefreshing(true);
+    } else {
+      setLoading(true);
+    }
+    setError("");
+  
+    try {
+      const [userDetails, transactionHistory] = await Promise.all([
+        fetchUserDetails(userId),
+        fetchUserTransactions(userId),
+      ]);
+
+      setProfile(userDetails);
+      setTransactions(transactionHistory);
+      updateUser({
+        ...user,
+        name: userDetails.name,
+        email: userDetails.email,
+        role: userDetails.role,
+        walletBalance: userDetails.walletBalance,
+      });
+    } catch (requestError) {
+      setError(
+        requestError.response?.data?.message ||
+          "Unable to load your dashboard right now."
+      );
+    } finally {
+      setLoading(false);
+      setRefreshing(false);
+    }
+  }
+
+  useEffect(() => {
     loadDashboard();
+    const refreshInterval = window.setInterval(() => {
+      loadDashboard(true);
+    }, 5000);
+
+    return () => window.clearInterval(refreshInterval);
   }, [userId]);
 
   function openPaymentModal(event) {
@@ -483,7 +494,18 @@ function UserDashboardPage() {
               <div>
                 <h2 className="text-xl font-bold text-ink">Transaction History</h2>
                 <p className="mt-2 text-sm text-slate-600">Recent toll activity.</p>
+                <p className="mt-1 text-xs font-medium uppercase tracking-[0.18em] text-slate-400">
+                  Shows transactions for this logged-in user and refreshes every 5 seconds.
+                </p>
               </div>
+              <button
+                type="button"
+                onClick={() => loadDashboard(true)}
+                disabled={refreshing}
+                className="rounded-2xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-ink transition hover:border-signal hover:text-signal disabled:cursor-not-allowed disabled:opacity-70"
+              >
+                {refreshing ? "Refreshing..." : "Refresh History"}
+              </button>
             </div>
 
             <div className="mt-6 overflow-x-auto">

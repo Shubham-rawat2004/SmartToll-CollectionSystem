@@ -31,4 +31,17 @@ public class TollController {
         HttpStatus status = response.isSuccess() ? HttpStatus.OK : HttpStatus.BAD_REQUEST;
         return ResponseEntity.status(status).body(response);
     }
+
+    @PostMapping("/scan/plate")
+    public ResponseEntity<TollProcessResponse> scanPlate(@RequestBody TollProcessRequest request) {
+        logger.info(
+                "Received ANPR scan request for vehicle {} at booth {} / {}",
+                request.getVehicleNumber(),
+                request.getTollBoothId(),
+                request.getTollBoothName()
+        );
+        TollProcessResponse response = tollService.processTollByVehicleNumber(request);
+        HttpStatus status = response.isSuccess() ? HttpStatus.OK : HttpStatus.BAD_REQUEST;
+        return ResponseEntity.status(status).body(response);
+    }
 }

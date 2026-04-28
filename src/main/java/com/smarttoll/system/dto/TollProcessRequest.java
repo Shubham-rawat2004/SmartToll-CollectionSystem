@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 public class TollProcessRequest {
 
     private String rfidTag;
+    private String vehicleNumber;
     private Long tollBoothId;
     private String tollBoothName;
 }

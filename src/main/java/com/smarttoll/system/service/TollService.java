@@ -54,8 +54,47 @@ public class TollService {
                 request.getTollBoothName()
         );
 
-        Vehicle vehicle = vehicleRepository.findByRfidTag(request.getRfidTag())
-                .orElseThrow(() -> new VehicleNotFoundException("Vehicle not found for the provided RFID tag"));
+        Vehicle vehicle = resolveVehicleFromScanInput(request.getRfidTag());
+
+        return processTollForVehicle(vehicle, request, processedAt);
+    }
+
+    @Transactional
+    public TollProcessResponse processTollByVehicleNumber(TollProcessRequest request) {
+        LocalDateTime processedAt = LocalDateTime.now();
+        logger.info(
+                "Processing toll scan for vehicle number {} at booth {} / {}",
+                request.getVehicleNumber(),
+                request.getTollBoothId(),
+                request.getTollBoothName()
+        );
+
+        String normalizedVehicleNumber = normalizeValue(request.getVehicleNumber());
+        Vehicle vehicle = vehicleRepository.findByVehicleNumber(normalizedVehicleNumber)
+                .orElseThrow(() -> new VehicleNotFoundException("Vehicle not found for the provided vehicle number"));
+
+        return processTollForVehicle(vehicle, request, processedAt);
+    }
+
+    private Vehicle resolveVehicleFromScanInput(String scanInput) {
+        String normalizedScanInput = normalizeValue(scanInput);
+
+        return vehicleRepository.findByRfidTag(normalizedScanInput)
+                .or(() -> vehicleRepository.findByVehicleNumber(normalizedScanInput))
+                .orElseThrow(() -> new VehicleNotFoundException(
+                        "Vehicle not found for the provided RFID tag or vehicle number"
+                ));
+    }
+
+    private String normalizeValue(String value) {
+        return value == null ? null : value.trim().toUpperCase();
+    }
+
+    private TollProcessResponse processTollForVehicle(
+            Vehicle vehicle,
+            TollProcessRequest request,
+            LocalDateTime processedAt
+    ) {
 
         TollBooth tollBooth = resolveTollBooth(request);
         if (tollBooth == null) {

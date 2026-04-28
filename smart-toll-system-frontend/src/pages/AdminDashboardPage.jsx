@@ -18,33 +18,45 @@ function AdminDashboardPage() {
   const [latestBooth, setLatestBooth] = useState(null);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
+  const [refreshing, setRefreshing] = useState(false);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
 
-  useEffect(() => {
-    async function loadAdminDashboard() {
+  async function loadAdminDashboard(isBackgroundRefresh = false) {
+    if (isBackgroundRefresh) {
+      setRefreshing(true);
+    } else {
       setLoading(true);
-      setError("");
-
-      try {
-        const [transactionData, vehicleData] = await Promise.all([
-          fetchAllTransactions(),
-          fetchAllVehicles(),
-        ]);
-
-        setTransactions(transactionData);
-        setVehicles(vehicleData);
-      } catch (requestError) {
-        setError(
-          requestError.response?.data?.message ||
-            "Unable to load admin dashboard data."
-        );
-      } finally {
-        setLoading(false);
-      }
     }
+    setError("");
 
+    try {
+      const [transactionData, vehicleData] = await Promise.all([
+        fetchAllTransactions(),
+        fetchAllVehicles(),
+      ]);
+
+      setTransactions(transactionData);
+      setVehicles(vehicleData);
+    } catch (requestError) {
+      setError(
+        requestError.response?.data?.message ||
+          "Unable to load admin dashboard data."
+      );
+    } finally {
+      setLoading(false);
+      setRefreshing(false);
+    }
+  }
+
+  useEffect(() => {
     loadAdminDashboard();
+
+    const refreshInterval = window.setInterval(() => {
+      loadAdminDashboard(true);
+    }, 5000);
+
+    return () => window.clearInterval(refreshInterval);
   }, []);
 
   async function handleAddBooth(event) {
@@ -90,13 +102,28 @@ function AdminDashboardPage() {
     <section className="space-y-6">
       <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
         <div className="panel-card">
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-road">
-            Admin Portal
-          </p>
-          <h1 className="mt-3 text-3xl font-bold text-ink">Admin Dashboard</h1>
+          <div className="flex flex-wrap items-start justify-between gap-4">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-road">
+                Admin Portal
+              </p>
+              <h1 className="mt-3 text-3xl font-bold text-ink">Admin Dashboard</h1>
+            </div>
+            <button
+              type="button"
+              onClick={() => loadAdminDashboard(true)}
+              disabled={refreshing}
+              className="rounded-2xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-ink transition hover:border-road hover:text-road disabled:cursor-not-allowed disabled:opacity-70"
+            >
+              {refreshing ? "Refreshing..." : "Refresh Records"}
+            </button>
+          </div>
           <p className="mt-3 max-w-2xl text-slate-600">
             Add toll booths, review all toll activity, and monitor registered
             vehicles from a single operations console.
+          </p>
+          <p className="mt-2 text-xs font-medium uppercase tracking-[0.18em] text-slate-400">
+            Transactions refresh automatically every 5 seconds.
           </p>
 
           <div className="mt-8 grid gap-4 sm:grid-cols-3">

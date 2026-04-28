@@ -1,0 +1,376 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 4 /Kids [ 3 0 R 5 0 R 7 0 R 9 0 R ] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 11 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 3374 >>
+stream
+BT
+/F1 12 Tf
+72 0 0 72 0 0 Tm
+/F1 18 Tf
+1 0 0 1 72 766 Tm
+(SMART TOLL COLLECTION SYSTEM) Tj
+/F1 12 Tf
+1 0 0 1 72 748 Tm
+(College Project Synopsis) Tj
+/F1 13 Tf
+1 0 0 1 72 720 Tm
+(Project Title) Tj
+/F1 11 Tf
+1 0 0 1 72 706 Tm
+(Smart Toll Collection System) Tj
+/F1 13 Tf
+1 0 0 1 72 678 Tm
+(1. Introduction) Tj
+/F1 11 Tf
+1 0 0 1 72 664 Tm
+(The Smart Toll Collection System is a full-stack web-based application developed to automate) Tj
+/F1 11 Tf
+1 0 0 1 72 650 Tm
+(toll payment and toll monitoring processes. Traditional toll collection methods involve) Tj
+/F1 11 Tf
+1 0 0 1 72 636 Tm
+(manual checking, waiting lines, and inefficient payment handling. This project reduces) Tj
+/F1 11 Tf
+1 0 0 1 72 622 Tm
+(manual effort and improves toll management by using RFID-based vehicle identification and) Tj
+/F1 11 Tf
+1 0 0 1 72 608 Tm
+(Automatic Number Plate Recognition \(ANPR\) with OCR. The system provides automatic toll) Tj
+/F1 11 Tf
+1 0 0 1 72 594 Tm
+(deduction, transaction tracking, vehicle registration, and administrative monitoring through) Tj
+/F1 11 Tf
+1 0 0 1 72 580 Tm
+(separate dashboards.) Tj
+/F1 13 Tf
+1 0 0 1 72 552 Tm
+(2. Problem Statement) Tj
+/F1 11 Tf
+1 0 0 1 72 538 Tm
+(Manual toll collection systems are time-consuming and prone to delays, human error, and poor) Tj
+/F1 11 Tf
+1 0 0 1 72 524 Tm
+(transaction transparency. Vehicles often need to stop for verification and payment, which) Tj
+/F1 11 Tf
+1 0 0 1 72 510 Tm
+(increases congestion at toll plazas. There is a need for a smarter toll management solution) Tj
+/F1 11 Tf
+1 0 0 1 72 496 Tm
+(that can identify vehicles automatically, deduct toll charges digitally, and maintain proper) Tj
+/F1 11 Tf
+1 0 0 1 72 482 Tm
+(records for both users and administrators.) Tj
+/F1 13 Tf
+1 0 0 1 72 454 Tm
+(3. Objectives) Tj
+/F1 11 Tf
+1 0 0 1 72 440 Tm
+(- To develop a digital toll collection system with automatic payment deduction.) Tj
+/F1 11 Tf
+1 0 0 1 72 416 Tm
+(- To enable vehicle identification through RFID and number plate recognition.) Tj
+/F1 11 Tf
+1 0 0 1 72 392 Tm
+(- To provide wallet-based payment integration for registered users.) Tj
+/F1 11 Tf
+1 0 0 1 72 368 Tm
+(- To maintain transaction history for users and administrators.) Tj
+/F1 11 Tf
+1 0 0 1 72 344 Tm
+(- To create a secure role-based platform for users, operators, and admins.) Tj
+/F1 11 Tf
+1 0 0 1 72 320 Tm
+(- To reduce manual intervention in toll processing.) Tj
+/F1 13 Tf
+1 0 0 1 72 292 Tm
+(4. Scope of the Project) Tj
+/F1 11 Tf
+1 0 0 1 72 278 Tm
+(The project covers vehicle registration, wallet recharge, toll booth management, toll) Tj
+/F1 11 Tf
+1 0 0 1 72 264 Tm
+(deduction, transaction recording, and dashboard monitoring. It supports both manual scanning) Tj
+/F1 11 Tf
+1 0 0 1 72 250 Tm
+(and OCR-based plate detection through live camera and uploaded images. The system is) Tj
+/F1 11 Tf
+1 0 0 1 72 236 Tm
+(suitable as a prototype for smart toll plaza automation and can be extended further for) Tj
+/F1 11 Tf
+1 0 0 1 72 222 Tm
+(real-world integration with live hardware and payment gateways.) Tj
+/F1 13 Tf
+1 0 0 1 72 194 Tm
+(5. Proposed System) Tj
+/F1 11 Tf
+1 0 0 1 72 180 Tm
+(The proposed system consists of a Spring Boot backend and a React frontend. Users can) Tj
+/F1 11 Tf
+1 0 0 1 72 166 Tm
+(register, log in, recharge their wallet, and register vehicles with unique RFID tags. Admins) Tj
+/F1 10 Tf
+1 0 0 1 500 40 Tm (Page 1 of 4) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 11 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 2360 >>
+stream
+BT
+/F1 12 Tf
+72 0 0 72 0 0 Tm
+/F1 11 Tf
+1 0 0 1 72 776 Tm
+(can add toll booths, monitor vehicle activity, and view all transactions. When a toll scan) Tj
+/F1 11 Tf
+1 0 0 1 72 762 Tm
+(occurs, the system identifies the vehicle using RFID or plate number, checks wallet balance,) Tj
+/F1 11 Tf
+1 0 0 1 72 748 Tm
+(deducts the toll amount automatically, and saves the transaction details. If the vehicle is) Tj
+/F1 11 Tf
+1 0 0 1 72 734 Tm
+(not found or the wallet balance is insufficient, the transaction is marked as failed.) Tj
+/F1 13 Tf
+1 0 0 1 72 706 Tm
+(6. Methodology / Working) Tj
+/F1 11 Tf
+1 0 0 1 72 692 Tm
+(- User registers and logs into the system.) Tj
+/F1 11 Tf
+1 0 0 1 72 668 Tm
+(- User adds money to wallet.) Tj
+/F1 11 Tf
+1 0 0 1 72 644 Tm
+(- User registers vehicle details and RFID tag.) Tj
+/F1 11 Tf
+1 0 0 1 72 620 Tm
+(- Admin creates toll booths with location and toll amount.) Tj
+/F1 11 Tf
+1 0 0 1 72 596 Tm
+(- Vehicle is scanned using RFID or ANPR OCR.) Tj
+/F1 11 Tf
+1 0 0 1 72 572 Tm
+(- System verifies whether the vehicle exists in the database.) Tj
+/F1 11 Tf
+1 0 0 1 72 548 Tm
+(- If valid and balance is sufficient, toll is deducted automatically.) Tj
+/F1 11 Tf
+1 0 0 1 72 524 Tm
+(- Transaction is stored and shown in user and admin dashboards.) Tj
+/F1 11 Tf
+1 0 0 1 72 500 Tm
+(- Duplicate scan checks are applied to prevent repeated processing.) Tj
+/F1 13 Tf
+1 0 0 1 72 472 Tm
+(7. Features of the Project) Tj
+/F1 11 Tf
+1 0 0 1 72 458 Tm
+(- User registration and login) Tj
+/F1 11 Tf
+1 0 0 1 72 434 Tm
+(- Role-based access control) Tj
+/F1 11 Tf
+1 0 0 1 72 410 Tm
+(- Wallet recharge functionality) Tj
+/F1 11 Tf
+1 0 0 1 72 386 Tm
+(- Vehicle registration with RFID) Tj
+/F1 11 Tf
+1 0 0 1 72 362 Tm
+(- Toll booth creation and management) Tj
+/F1 11 Tf
+1 0 0 1 72 338 Tm
+(- Manual toll scan support) Tj
+/F1 11 Tf
+1 0 0 1 72 314 Tm
+(- Camera OCR-based number plate detection) Tj
+/F1 11 Tf
+1 0 0 1 72 290 Tm
+(- Uploaded image OCR-based number plate detection) Tj
+/F1 11 Tf
+1 0 0 1 72 266 Tm
+(- Automatic toll deduction) Tj
+/F1 11 Tf
+1 0 0 1 72 242 Tm
+(- Transaction history for users) Tj
+/F1 11 Tf
+1 0 0 1 72 218 Tm
+(- Admin dashboard for all transactions and vehicle monitoring) Tj
+/F1 11 Tf
+1 0 0 1 72 194 Tm
+(- Duplicate scan protection) Tj
+/F1 11 Tf
+1 0 0 1 72 170 Tm
+(- Failed transaction handling) Tj
+/F1 10 Tf
+1 0 0 1 500 40 Tm (Page 2 of 4) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 11 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2324 >>
+stream
+BT
+/F1 12 Tf
+72 0 0 72 0 0 Tm
+/F1 13 Tf
+1 0 0 1 72 772 Tm
+(8. Technologies Used) Tj
+/F1 11 Tf
+1 0 0 1 72 758 Tm
+(- Frontend: React, Vite, JavaScript, Tailwind CSS) Tj
+/F1 11 Tf
+1 0 0 1 72 734 Tm
+(- Backend: Spring Boot, Java) Tj
+/F1 11 Tf
+1 0 0 1 72 710 Tm
+(- Database: MySQL) Tj
+/F1 11 Tf
+1 0 0 1 72 686 Tm
+(- OCR: Tesseract.js) Tj
+/F1 11 Tf
+1 0 0 1 72 662 Tm
+(- Tools: Maven, Git, IntelliJ IDEA / VS Code) Tj
+/F1 13 Tf
+1 0 0 1 72 634 Tm
+(9. Hardware and Software Requirements) Tj
+/F1 11 Tf
+1 0 0 1 72 620 Tm
+(Hardware Requirements: Computer or laptop with webcam, minimum 4 GB RAM, and browser access) Tj
+/F1 11 Tf
+1 0 0 1 72 606 Tm
+(for testing.) Tj
+/F1 11 Tf
+1 0 0 1 72 582 Tm
+(Software Requirements: Windows/Linux/Mac OS, Java JDK, Node.js and npm, MySQL Server, Maven,) Tj
+/F1 11 Tf
+1 0 0 1 72 568 Tm
+(and a modern web browser.) Tj
+/F1 13 Tf
+1 0 0 1 72 540 Tm
+(10. Expected Outcome) Tj
+/F1 11 Tf
+1 0 0 1 72 526 Tm
+(The expected outcome of the project is a working smart toll prototype that can automatically) Tj
+/F1 11 Tf
+1 0 0 1 72 512 Tm
+(identify vehicles, deduct toll charges, and maintain real-time digital records. The system) Tj
+/F1 11 Tf
+1 0 0 1 72 498 Tm
+(improves speed, accuracy, and transparency in toll operations while providing easy) Tj
+/F1 11 Tf
+1 0 0 1 72 484 Tm
+(monitoring for both users and administrators.) Tj
+/F1 13 Tf
+1 0 0 1 72 456 Tm
+(11. Applications) Tj
+/F1 11 Tf
+1 0 0 1 72 442 Tm
+(- Highway toll plaza automation) Tj
+/F1 11 Tf
+1 0 0 1 72 418 Tm
+(- Smart city transportation systems) Tj
+/F1 11 Tf
+1 0 0 1 72 394 Tm
+(- Vehicle monitoring platforms) Tj
+/F1 11 Tf
+1 0 0 1 72 370 Tm
+(- Automated payment collection systems) Tj
+/F1 13 Tf
+1 0 0 1 72 342 Tm
+(12. Future Enhancements) Tj
+/F1 11 Tf
+1 0 0 1 72 328 Tm
+(- Integration with real RFID hardware) Tj
+/F1 11 Tf
+1 0 0 1 72 304 Tm
+(- Integration with real payment gateways) Tj
+/F1 11 Tf
+1 0 0 1 72 280 Tm
+(- SMS/email notifications after transactions) Tj
+/F1 11 Tf
+1 0 0 1 72 256 Tm
+(- Live deployment with cloud database) Tj
+/F1 11 Tf
+1 0 0 1 72 232 Tm
+(- Advanced OCR and image enhancement) Tj
+/F1 11 Tf
+1 0 0 1 72 208 Tm
+(- Booth-wise analytics and reporting) Tj
+/F1 11 Tf
+1 0 0 1 72 184 Tm
+(- Multi-location transaction sharing and alerts) Tj
+/F1 13 Tf
+1 0 0 1 72 156 Tm
+(13. Conclusion) Tj
+/F1 10 Tf
+1 0 0 1 500 40 Tm (Page 3 of 4) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 11 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 642 >>
+stream
+BT
+/F1 12 Tf
+72 0 0 72 0 0 Tm
+/F1 11 Tf
+1 0 0 1 72 776 Tm
+(The Smart Toll Collection System is a practical and effective solution for automating toll) Tj
+/F1 11 Tf
+1 0 0 1 72 762 Tm
+(collection and monitoring. It combines RFID, OCR, wallet-based deduction, and dashboard-) Tj
+/F1 11 Tf
+1 0 0 1 72 748 Tm
+(based management into one integrated platform. The project demonstrates how digital) Tj
+/F1 11 Tf
+1 0 0 1 72 734 Tm
+(technologies can improve efficiency, reduce manual work, and provide a strong foundation for) Tj
+/F1 11 Tf
+1 0 0 1 72 720 Tm
+(future intelligent transportation systems.) Tj
+/F1 10 Tf
+1 0 0 1 500 40 Tm (Page 4 of 4) Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000135 00000 n 
+0000000262 00000 n 
+0000003688 00000 n 
+0000003815 00000 n 
+0000006227 00000 n 
+0000006354 00000 n 
+0000008730 00000 n 
+0000008858 00000 n 
+0000009552 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+9623
+%%EOF
