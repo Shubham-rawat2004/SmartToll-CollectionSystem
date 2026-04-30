@@ -1,0 +1,1223 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 11 /Kids [ 3 0 R 5 0 R 7 0 R 9 0 R 11 0 R 13 0 R 15 0 R 17 0 R 19 0 R 21 0 R 23 0 R ] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 25 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 3569 >>
+stream
+BT
+/F1 12 Tf
+72 0 0 72 0 0 Tm
+/F1 18 Tf
+1 0 0 1 72 766 Tm
+(SMART TOLL COLLECTION SYSTEM) Tj
+/F1 12 Tf
+1 0 0 1 72 748 Tm
+(College Project Synopsis) Tj
+/F1 13 Tf
+1 0 0 1 72 720 Tm
+(Project Title) Tj
+/F1 11 Tf
+1 0 0 1 72 706 Tm
+(Smart Toll Collection System) Tj
+/F1 13 Tf
+1 0 0 1 72 678 Tm
+(Abstract) Tj
+/F1 11 Tf
+1 0 0 1 72 664 Tm
+(The Smart Toll Collection System is a full-stack web-based project that automates toll) Tj
+/F1 11 Tf
+1 0 0 1 72 650 Tm
+(collection through RFID-based vehicle identification, OCR-based number plate recognition,) Tj
+/F1 11 Tf
+1 0 0 1 72 636 Tm
+(digital wallet deduction, and transaction monitoring. It is designed as a prototype for) Tj
+/F1 11 Tf
+1 0 0 1 72 622 Tm
+(smart transportation and toll plaza automation.) Tj
+/F1 11 Tf
+1 0 0 1 72 598 Tm
+(The system provides secure authentication, role-based access, vehicle registration, toll) Tj
+/F1 11 Tf
+1 0 0 1 72 584 Tm
+(booth management, wallet recharge, automatic toll processing, duplicate scan detection, and) Tj
+/F1 11 Tf
+1 0 0 1 72 570 Tm
+(user/admin dashboards. The project can be used as a base reference for preparing the final) Tj
+/F1 11 Tf
+1 0 0 1 72 556 Tm
+(report, presentation, viva explanation, and future development documentation.) Tj
+/F1 13 Tf
+1 0 0 1 72 528 Tm
+(1. Introduction) Tj
+/F1 11 Tf
+1 0 0 1 72 514 Tm
+(The Smart Toll Collection System is a full-stack web application developed to automate toll) Tj
+/F1 11 Tf
+1 0 0 1 72 500 Tm
+(collection, vehicle identification, digital wallet deduction, and toll transaction) Tj
+/F1 11 Tf
+1 0 0 1 72 486 Tm
+(monitoring. The system uses RFID-based vehicle identification, manual scan simulation, and) Tj
+/F1 11 Tf
+1 0 0 1 72 472 Tm
+(OCR-based number plate recognition support to model a modern toll plaza workflow. It) Tj
+/F1 11 Tf
+1 0 0 1 72 458 Tm
+(provides separate user and admin features so that vehicle owners can manage wallet and) Tj
+/F1 11 Tf
+1 0 0 1 72 444 Tm
+(vehicle data while administrators can manage toll booths and monitor transactions.) Tj
+/F1 11 Tf
+1 0 0 1 72 420 Tm
+(The project reflects the need for digital transformation in transportation infrastructure.) Tj
+/F1 11 Tf
+1 0 0 1 72 406 Tm
+(Toll plazas often face vehicle queues due to manual payment and verification processes. By) Tj
+/F1 11 Tf
+1 0 0 1 72 392 Tm
+(identifying registered vehicles automatically and deducting payment from the owner's wallet,) Tj
+/F1 11 Tf
+1 0 0 1 72 378 Tm
+(the system reduces manual dependency and improves speed, transparency, and record accuracy.) Tj
+/F1 13 Tf
+1 0 0 1 72 350 Tm
+(2. Problem Statement) Tj
+/F1 11 Tf
+1 0 0 1 72 336 Tm
+(Traditional toll collection requires manual payment handling, vehicle verification, and) Tj
+/F1 11 Tf
+1 0 0 1 72 322 Tm
+(receipt management. This creates waiting time, traffic congestion, human error, and poor) Tj
+/F1 11 Tf
+1 0 0 1 72 308 Tm
+(transaction visibility. A smart toll system is required to identify vehicles quickly, deduct) Tj
+/F1 11 Tf
+1 0 0 1 72 294 Tm
+(toll charges from a digital wallet, record every transaction, and provide monitoring tools) Tj
+/F1 11 Tf
+1 0 0 1 72 280 Tm
+(for administrators.) Tj
+/F1 13 Tf
+1 0 0 1 72 252 Tm
+(3. Objectives) Tj
+/F1 11 Tf
+1 0 0 1 72 238 Tm
+(- To develop a digital toll collection system with automatic payment deduction.) Tj
+/F1 11 Tf
+1 0 0 1 72 214 Tm
+(- To identify vehicles through RFID tags, manual scan input, and OCR-based number plate) Tj
+/F1 11 Tf
+1 0 0 1 72 200 Tm
+(detection.) Tj
+/F1 11 Tf
+1 0 0 1 72 176 Tm
+(- To provide wallet-based payment integration for registered users.) Tj
+/F1 10 Tf
+1 0 0 1 500 40 Tm (Page 1 of 11) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 25 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 3459 >>
+stream
+BT
+/F1 12 Tf
+72 0 0 72 0 0 Tm
+/F1 11 Tf
+1 0 0 1 72 776 Tm
+(- To maintain transaction history for users and administrators.) Tj
+/F1 11 Tf
+1 0 0 1 72 752 Tm
+(- To create a secure role-based platform for users, operators, and admins.) Tj
+/F1 11 Tf
+1 0 0 1 72 728 Tm
+(- To detect duplicate toll scans and reduce repeated or fraudulent deductions.) Tj
+/F1 11 Tf
+1 0 0 1 72 704 Tm
+(- To reduce manual intervention in toll processing.) Tj
+/F1 13 Tf
+1 0 0 1 72 676 Tm
+(4. Scope of the Project) Tj
+/F1 11 Tf
+1 0 0 1 72 662 Tm
+(The project covers authentication, user profile handling, wallet recharge, vehicle) Tj
+/F1 11 Tf
+1 0 0 1 72 648 Tm
+(registration, RFID tag linking, toll booth setup, toll scan processing, transaction history,) Tj
+/F1 11 Tf
+1 0 0 1 72 634 Tm
+(admin monitoring, and OCR-assisted plate scanning. It currently works as a prototype using) Tj
+/F1 11 Tf
+1 0 0 1 72 620 Tm
+(simulated RFID/manual input and camera/uploaded-image OCR. It can be extended for real RFID) Tj
+/F1 11 Tf
+1 0 0 1 72 606 Tm
+(hardware, real payment gateways, FASTag-style integration, and cloud deployment.) Tj
+/F1 11 Tf
+1 0 0 1 72 582 Tm
+(The scope is limited to software-level toll simulation and project demonstration. It does) Tj
+/F1 11 Tf
+1 0 0 1 72 568 Tm
+(not currently include physical toll barriers, real RFID readers, bank-grade payments, or) Tj
+/F1 11 Tf
+1 0 0 1 72 554 Tm
+(production deployment. However, the architecture is modular enough to support these) Tj
+/F1 11 Tf
+1 0 0 1 72 540 Tm
+(integrations later.) Tj
+/F1 13 Tf
+1 0 0 1 72 512 Tm
+(5. Existing System) Tj
+/F1 11 Tf
+1 0 0 1 72 498 Tm
+(In a manual toll collection system, toll operators collect payments directly from drivers,) Tj
+/F1 11 Tf
+1 0 0 1 72 484 Tm
+(verify vehicle details manually, and maintain records through paper receipts or isolated) Tj
+/F1 11 Tf
+1 0 0 1 72 470 Tm
+(digital terminals. This process is slow and depends heavily on human operation. It does not) Tj
+/F1 11 Tf
+1 0 0 1 72 456 Tm
+(provide smooth automated payment, instant transaction visibility, or strong duplicate scan) Tj
+/F1 11 Tf
+1 0 0 1 72 442 Tm
+(prevention.) Tj
+/F1 13 Tf
+1 0 0 1 72 414 Tm
+(6. Proposed System) Tj
+/F1 11 Tf
+1 0 0 1 72 400 Tm
+(The proposed system uses a Spring Boot backend, React frontend, and MySQL database. Users) Tj
+/F1 11 Tf
+1 0 0 1 72 386 Tm
+(register and log in securely, add wallet balance, and register vehicles with RFID tags.) Tj
+/F1 11 Tf
+1 0 0 1 72 372 Tm
+(Admins create toll booths with location and toll amount details. During toll scanning, the) Tj
+/F1 11 Tf
+1 0 0 1 72 358 Tm
+(system identifies the vehicle using RFID or vehicle number, verifies the toll booth, checks) Tj
+/F1 11 Tf
+1 0 0 1 72 344 Tm
+(wallet balance, deducts the toll amount, and stores the result as a transaction. Failed) Tj
+/F1 11 Tf
+1 0 0 1 72 330 Tm
+(cases such as invalid vehicle, insufficient balance, and duplicate scans are handled with) Tj
+/F1 11 Tf
+1 0 0 1 72 316 Tm
+(proper responses.) Tj
+/F1 13 Tf
+1 0 0 1 72 288 Tm
+(7. Major Features) Tj
+/F1 11 Tf
+1 0 0 1 72 274 Tm
+(Secure user registration and login.) Tj
+/F1 11 Tf
+1 0 0 1 72 250 Tm
+(JWT-based authentication and BCrypt password encryption.) Tj
+/F1 11 Tf
+1 0 0 1 72 226 Tm
+(Role-based access for ADMIN, USER, and OPERATOR roles.) Tj
+/F1 11 Tf
+1 0 0 1 72 202 Tm
+(User wallet recharge and balance management.) Tj
+/F1 11 Tf
+1 0 0 1 72 178 Tm
+(Vehicle registration with owner mapping and unique RFID tag.) Tj
+/F1 10 Tf
+1 0 0 1 500 40 Tm (Page 2 of 11) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 25 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 2806 >>
+stream
+BT
+/F1 12 Tf
+72 0 0 72 0 0 Tm
+/F1 11 Tf
+1 0 0 1 72 776 Tm
+(Admin toll booth creation with name, location, and toll amount.) Tj
+/F1 11 Tf
+1 0 0 1 72 752 Tm
+(Manual RFID or vehicle number toll scan simulation.) Tj
+/F1 11 Tf
+1 0 0 1 72 728 Tm
+(Camera and uploaded-image OCR number plate detection using Tesseract.js.) Tj
+/F1 11 Tf
+1 0 0 1 72 704 Tm
+(Automatic toll deduction after successful validation.) Tj
+/F1 11 Tf
+1 0 0 1 72 680 Tm
+(Transaction recording with SUCCESS and FAILED status.) Tj
+/F1 11 Tf
+1 0 0 1 72 656 Tm
+(User-wise and vehicle-wise transaction history.) Tj
+/F1 11 Tf
+1 0 0 1 72 632 Tm
+(Admin dashboard for all transactions and registered vehicle monitoring.) Tj
+/F1 11 Tf
+1 0 0 1 72 608 Tm
+(Duplicate scan fraud detection within a 60-second window.) Tj
+/F1 11 Tf
+1 0 0 1 72 584 Tm
+(Backend logging and global exception handling.) Tj
+/F1 13 Tf
+1 0 0 1 72 556 Tm
+(8. Technology Stack) Tj
+/F1 11 Tf
+1 0 0 1 72 542 Tm
+(Backend: Java, Spring Boot 3.3.5, Spring Web, Spring Security, Spring Data JPA, Hibernate,) Tj
+/F1 11 Tf
+1 0 0 1 72 528 Tm
+(Lombok, Maven.) Tj
+/F1 11 Tf
+1 0 0 1 72 504 Tm
+(Security: JWT authentication, BCrypt password hashing, secured API filters, role-based) Tj
+/F1 11 Tf
+1 0 0 1 72 490 Tm
+(access control.) Tj
+/F1 11 Tf
+1 0 0 1 72 466 Tm
+(Database: MySQL for main application persistence.) Tj
+/F1 11 Tf
+1 0 0 1 72 442 Tm
+(Frontend: React 18, Vite, JavaScript, Tailwind CSS, React Router, Axios.) Tj
+/F1 11 Tf
+1 0 0 1 72 418 Tm
+(OCR and ANPR: Tesseract.js in the React frontend for browser-based number plate recognition.) Tj
+/F1 11 Tf
+1 0 0 1 72 394 Tm
+(Development Tools: IntelliJ IDEA or VS Code, Maven, npm, Git, browser developer tools,) Tj
+/F1 11 Tf
+1 0 0 1 72 380 Tm
+(Postman for API testing.) Tj
+/F1 13 Tf
+1 0 0 1 72 352 Tm
+(9. Hardware and Software Requirements) Tj
+/F1 11 Tf
+1 0 0 1 72 338 Tm
+(Hardware Requirements: Laptop or desktop computer, minimum 4 GB RAM, webcam for OCR testing,) Tj
+/F1 11 Tf
+1 0 0 1 72 324 Tm
+(and stable local network/browser access.) Tj
+/F1 11 Tf
+1 0 0 1 72 300 Tm
+(Software Requirements: Windows/Linux/Mac OS, Java JDK, Maven, Node.js, npm, MySQL Server,) Tj
+/F1 11 Tf
+1 0 0 1 72 286 Tm
+(and a modern web browser.) Tj
+/F1 13 Tf
+1 0 0 1 72 258 Tm
+(9A. Functional Requirements) Tj
+/F1 11 Tf
+1 0 0 1 72 244 Tm
+(The system must allow new users to register with name, email, password, role, and optional) Tj
+/F1 11 Tf
+1 0 0 1 72 230 Tm
+(wallet balance.) Tj
+/F1 11 Tf
+1 0 0 1 72 206 Tm
+(The system must authenticate users and return a JWT token after successful login.) Tj
+/F1 11 Tf
+1 0 0 1 72 182 Tm
+(The system must allow users to recharge their wallet balance.) Tj
+/F1 11 Tf
+1 0 0 1 72 158 Tm
+(The system must allow users to register vehicles with unique vehicle numbers and RFID tags.) Tj
+/F1 10 Tf
+1 0 0 1 500 40 Tm (Page 3 of 11) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 25 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 3416 >>
+stream
+BT
+/F1 12 Tf
+72 0 0 72 0 0 Tm
+/F1 11 Tf
+1 0 0 1 72 766 Tm
+(The system must allow admins to create toll booths with name, location, and toll amount.) Tj
+/F1 11 Tf
+1 0 0 1 72 742 Tm
+(The system must allow toll scans through RFID/manual input and OCR-detected plate input.) Tj
+/F1 11 Tf
+1 0 0 1 72 718 Tm
+(The system must validate the vehicle and toll booth before toll deduction.) Tj
+/F1 11 Tf
+1 0 0 1 72 694 Tm
+(The system must check wallet balance before processing payment.) Tj
+/F1 11 Tf
+1 0 0 1 72 670 Tm
+(The system must deduct toll amount automatically after successful validation.) Tj
+/F1 11 Tf
+1 0 0 1 72 646 Tm
+(The system must save successful and failed transactions.) Tj
+/F1 11 Tf
+1 0 0 1 72 622 Tm
+(The system must allow users to view their own transaction history.) Tj
+/F1 11 Tf
+1 0 0 1 72 598 Tm
+(The system must allow admins to view all transactions and registered vehicles.) Tj
+/F1 11 Tf
+1 0 0 1 72 574 Tm
+(The system must detect duplicate scans within a defined time window.) Tj
+/F1 13 Tf
+1 0 0 1 72 546 Tm
+(9B. Non-Functional Requirements) Tj
+/F1 11 Tf
+1 0 0 1 72 532 Tm
+(Security: Passwords must be encrypted and APIs must be protected using JWT authentication.) Tj
+/F1 11 Tf
+1 0 0 1 72 508 Tm
+(Reliability: Toll processing should handle invalid vehicles, invalid booths, insufficient) Tj
+/F1 11 Tf
+1 0 0 1 72 494 Tm
+(balance, and duplicate scans safely.) Tj
+/F1 11 Tf
+1 0 0 1 72 470 Tm
+(Usability: The frontend should provide clear forms, dashboards, and feedback messages.) Tj
+/F1 11 Tf
+1 0 0 1 72 446 Tm
+(Maintainability: The backend should follow layered architecture using controllers, services,) Tj
+/F1 11 Tf
+1 0 0 1 72 432 Tm
+(repositories, DTOs, entities, and exception handlers.) Tj
+/F1 11 Tf
+1 0 0 1 72 408 Tm
+(Scalability: The system should be extendable for real RFID hardware, payment gateways, and) Tj
+/F1 11 Tf
+1 0 0 1 72 394 Tm
+(cloud deployment.) Tj
+/F1 11 Tf
+1 0 0 1 72 370 Tm
+(Performance: Toll scan processing should be fast enough for real-time demonstration.) Tj
+/F1 11 Tf
+1 0 0 1 72 346 Tm
+(Auditability: Transactions should be stored with timestamp and status for future) Tj
+/F1 11 Tf
+1 0 0 1 72 332 Tm
+(verification.) Tj
+/F1 13 Tf
+1 0 0 1 72 304 Tm
+(10. System Architecture) Tj
+/F1 11 Tf
+1 0 0 1 72 290 Tm
+(The system follows a client-server architecture. The React frontend acts as the user) Tj
+/F1 11 Tf
+1 0 0 1 72 276 Tm
+(interface and communicates with the Spring Boot backend through REST APIs. The backend) Tj
+/F1 11 Tf
+1 0 0 1 72 262 Tm
+(contains controllers, DTOs, entities, repositories, security classes, exception handlers,) Tj
+/F1 11 Tf
+1 0 0 1 72 248 Tm
+(and service logic. Spring Data JPA connects the backend to MySQL. The OCR feature runs in) Tj
+/F1 11 Tf
+1 0 0 1 72 234 Tm
+(the frontend browser using Tesseract.js and sends the detected plate or scan value to the) Tj
+/F1 11 Tf
+1 0 0 1 72 220 Tm
+(backend for toll processing.) Tj
+/F1 11 Tf
+1 0 0 1 72 196 Tm
+(Architecture Layers: Presentation Layer contains React pages, components, context, and) Tj
+/F1 11 Tf
+1 0 0 1 72 182 Tm
+(services. API Layer contains Spring Boot REST controllers. Business Logic Layer contains) Tj
+/F1 11 Tf
+1 0 0 1 72 168 Tm
+(toll processing, wallet update, duplicate scan validation, and transaction handling.) Tj
+/F1 11 Tf
+1 0 0 1 72 154 Tm
+(Persistence Layer contains JPA repositories and MySQL database tables. Security Layer) Tj
+/F1 10 Tf
+1 0 0 1 500 40 Tm (Page 4 of 11) Tj
+ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 25 0 R >> >> /Contents 12 0 R >>
+endobj
+12 0 obj
+<< /Length 3167 >>
+stream
+BT
+/F1 12 Tf
+72 0 0 72 0 0 Tm
+/F1 11 Tf
+1 0 0 1 72 776 Tm
+(contains JWT utilities, authentication filter, user details service, and security) Tj
+/F1 11 Tf
+1 0 0 1 72 762 Tm
+(configuration.) Tj
+/F1 13 Tf
+1 0 0 1 72 734 Tm
+(11. Module Description) Tj
+/F1 11 Tf
+1 0 0 1 72 720 Tm
+(Authentication Module: Handles registration, login, password encryption, JWT token) Tj
+/F1 11 Tf
+1 0 0 1 72 706 Tm
+(generation, and authenticated access.) Tj
+/F1 11 Tf
+1 0 0 1 72 682 Tm
+(User and Wallet Module: Stores user details, role, and wallet balance. Supports wallet) Tj
+/F1 11 Tf
+1 0 0 1 72 668 Tm
+(recharge and user profile retrieval.) Tj
+/F1 11 Tf
+1 0 0 1 72 644 Tm
+(Vehicle Module: Allows users to register vehicles with vehicle number, owner, and RFID tag.) Tj
+/F1 11 Tf
+1 0 0 1 72 630 Tm
+(Prevents duplicate vehicle numbers and RFID tags.) Tj
+/F1 11 Tf
+1 0 0 1 72 606 Tm
+(Toll Booth Module: Allows admins to create and fetch toll booth data including booth name,) Tj
+/F1 11 Tf
+1 0 0 1 72 592 Tm
+(location, and toll amount.) Tj
+/F1 11 Tf
+1 0 0 1 72 568 Tm
+(Toll Processing Module: Processes RFID, vehicle number, or OCR scan input, validates vehicle) Tj
+/F1 11 Tf
+1 0 0 1 72 554 Tm
+(and booth, checks balance, deducts toll, and stores transactions.) Tj
+/F1 11 Tf
+1 0 0 1 72 530 Tm
+(Transaction Module: Maintains toll records with amount, vehicle, booth, timestamp, and) Tj
+/F1 11 Tf
+1 0 0 1 72 516 Tm
+(status.) Tj
+/F1 11 Tf
+1 0 0 1 72 492 Tm
+(Admin Module: Provides admin-facing transaction and vehicle monitoring features.) Tj
+/F1 11 Tf
+1 0 0 1 72 468 Tm
+(OCR Module: Reads vehicle number plates from camera or uploaded images and submits detected) Tj
+/F1 11 Tf
+1 0 0 1 72 454 Tm
+(plate data for toll processing.) Tj
+/F1 13 Tf
+1 0 0 1 72 426 Tm
+(12. Database Design Overview) Tj
+/F1 11 Tf
+1 0 0 1 72 412 Tm
+(User Entity: Stores id, name, email, password, role, and wallet balance.) Tj
+/F1 11 Tf
+1 0 0 1 72 388 Tm
+(Vehicle Entity: Stores id, vehicle number, RFID tag, and owner relationship.) Tj
+/F1 11 Tf
+1 0 0 1 72 364 Tm
+(TollBooth Entity: Stores id, booth name, location, and toll amount.) Tj
+/F1 11 Tf
+1 0 0 1 72 340 Tm
+(Transaction Entity: Stores id, vehicle, toll booth, amount, timestamp, and status.) Tj
+/F1 11 Tf
+1 0 0 1 72 316 Tm
+(Role and TransactionStatus Enums: Define supported user roles and transaction result states.) Tj
+/F1 11 Tf
+1 0 0 1 72 292 Tm
+(Relationships: One user can own multiple vehicles. One vehicle can have multiple) Tj
+/F1 11 Tf
+1 0 0 1 72 278 Tm
+(transactions. One toll booth can be associated with multiple transactions. Each transaction) Tj
+/F1 11 Tf
+1 0 0 1 72 264 Tm
+(belongs to one vehicle and one toll booth.) Tj
+/F1 13 Tf
+1 0 0 1 72 236 Tm
+(12A. Data Flow Overview) Tj
+/F1 11 Tf
+1 0 0 1 72 222 Tm
+(Registration Flow: User enters registration details, backend validates email, encrypts) Tj
+/F1 11 Tf
+1 0 0 1 72 208 Tm
+(password, assigns role, saves user, and returns response.) Tj
+/F1 11 Tf
+1 0 0 1 72 184 Tm
+(Login Flow: User enters email and password, backend authenticates credentials, generates JWT) Tj
+/F1 11 Tf
+1 0 0 1 72 170 Tm
+(token, and frontend stores authentication data.) Tj
+/F1 10 Tf
+1 0 0 1 500 40 Tm (Page 5 of 11) Tj
+ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 25 0 R >> >> /Contents 14 0 R >>
+endobj
+14 0 obj
+<< /Length 2855 >>
+stream
+BT
+/F1 12 Tf
+72 0 0 72 0 0 Tm
+/F1 11 Tf
+1 0 0 1 72 776 Tm
+(Vehicle Flow: User submits vehicle number, RFID tag, and owner id. Backend checks duplicate) Tj
+/F1 11 Tf
+1 0 0 1 72 762 Tm
+(records and stores the vehicle.) Tj
+/F1 11 Tf
+1 0 0 1 72 738 Tm
+(Wallet Flow: User enters recharge amount. Backend validates the amount, updates wallet) Tj
+/F1 11 Tf
+1 0 0 1 72 724 Tm
+(balance, and returns updated user details.) Tj
+/F1 11 Tf
+1 0 0 1 72 700 Tm
+(Toll Scan Flow: Frontend sends RFID tag or detected vehicle number with toll booth details.) Tj
+/F1 11 Tf
+1 0 0 1 72 686 Tm
+(Backend identifies vehicle, validates booth, checks duplicate scans, verifies wallet) Tj
+/F1 11 Tf
+1 0 0 1 72 672 Tm
+(balance, deducts toll, stores transaction, and returns result.) Tj
+/F1 11 Tf
+1 0 0 1 72 648 Tm
+(Admin Flow: Admin creates toll booths and views all transaction records for monitoring.) Tj
+/F1 13 Tf
+1 0 0 1 72 620 Tm
+(13. Working of the System) Tj
+/F1 11 Tf
+1 0 0 1 72 606 Tm
+(A user registers and logs into the application.) Tj
+/F1 11 Tf
+1 0 0 1 72 582 Tm
+(The user recharges the wallet through the simulated wallet flow.) Tj
+/F1 11 Tf
+1 0 0 1 72 558 Tm
+(The user registers a vehicle and assigns an RFID tag.) Tj
+/F1 11 Tf
+1 0 0 1 72 534 Tm
+(The admin adds toll booths with fixed toll charges.) Tj
+/F1 11 Tf
+1 0 0 1 72 510 Tm
+(At the toll scan page, RFID/plate input is entered manually or detected through OCR.) Tj
+/F1 11 Tf
+1 0 0 1 72 486 Tm
+(The backend finds the registered vehicle and selected toll booth.) Tj
+/F1 11 Tf
+1 0 0 1 72 462 Tm
+(The system checks whether a duplicate scan occurred within 60 seconds.) Tj
+/F1 11 Tf
+1 0 0 1 72 438 Tm
+(The system checks the owner's wallet balance.) Tj
+/F1 11 Tf
+1 0 0 1 72 414 Tm
+(If sufficient balance exists, the toll amount is deducted and a successful transaction is) Tj
+/F1 11 Tf
+1 0 0 1 72 400 Tm
+(saved.) Tj
+/F1 11 Tf
+1 0 0 1 72 376 Tm
+(If validation fails, the system returns an error and records the failed transaction where) Tj
+/F1 11 Tf
+1 0 0 1 72 362 Tm
+(applicable.) Tj
+/F1 11 Tf
+1 0 0 1 72 338 Tm
+(Users and admins can view transaction records through their dashboards.) Tj
+/F1 13 Tf
+1 0 0 1 72 310 Tm
+(14. Important REST APIs) Tj
+/F1 11 Tf
+1 0 0 1 72 296 Tm
+(Authentication: POST /auth/register and POST /auth/login.) Tj
+/F1 11 Tf
+1 0 0 1 72 272 Tm
+(User: GET /users/{id}, PATCH /users/{id}/wallet, GET /users/{id}/transactions.) Tj
+/F1 11 Tf
+1 0 0 1 72 248 Tm
+(Vehicle: POST /vehicles, GET /vehicles, GET /vehicles/{vehicleNumber}, GET) Tj
+/F1 11 Tf
+1 0 0 1 72 234 Tm
+(/vehicles/{vehicleNumber}/transactions.) Tj
+/F1 11 Tf
+1 0 0 1 72 210 Tm
+(Admin: POST /admin/toll-booths and GET /admin/transactions.) Tj
+/F1 11 Tf
+1 0 0 1 72 186 Tm
+(Toll Booths: GET /toll-booths.) Tj
+/F1 11 Tf
+1 0 0 1 72 162 Tm
+(Toll Scan: POST /toll/scan and POST /toll/scan/plate.) Tj
+/F1 10 Tf
+1 0 0 1 500 40 Tm (Page 6 of 11) Tj
+ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 25 0 R >> >> /Contents 16 0 R >>
+endobj
+16 0 obj
+<< /Length 2453 >>
+stream
+BT
+/F1 12 Tf
+72 0 0 72 0 0 Tm
+/F1 13 Tf
+1 0 0 1 72 772 Tm
+(15. Security Features) Tj
+/F1 11 Tf
+1 0 0 1 72 758 Tm
+(JWT tokens are used to authenticate users after login.) Tj
+/F1 11 Tf
+1 0 0 1 72 734 Tm
+(Passwords are encoded using BCrypt before storage.) Tj
+/F1 11 Tf
+1 0 0 1 72 710 Tm
+(Spring Security protects backend endpoints.) Tj
+/F1 11 Tf
+1 0 0 1 72 686 Tm
+(Role-based access supports admin, user, and operator responsibilities.) Tj
+/F1 11 Tf
+1 0 0 1 72 662 Tm
+(Duplicate scan detection prevents repeated toll deduction within a short interval.) Tj
+/F1 11 Tf
+1 0 0 1 72 638 Tm
+(Global exception handling provides cleaner API error responses.) Tj
+/F1 13 Tf
+1 0 0 1 72 610 Tm
+(15A. Validation and Error Handling) Tj
+/F1 11 Tf
+1 0 0 1 72 596 Tm
+(Duplicate email registration is rejected with a conflict response.) Tj
+/F1 11 Tf
+1 0 0 1 72 572 Tm
+(Duplicate vehicle number and duplicate RFID tag are rejected.) Tj
+/F1 11 Tf
+1 0 0 1 72 548 Tm
+(Wallet recharge amount must be greater than zero.) Tj
+/F1 11 Tf
+1 0 0 1 72 524 Tm
+(Invalid vehicle or RFID input returns a vehicle not found response.) Tj
+/F1 11 Tf
+1 0 0 1 72 500 Tm
+(Invalid toll booth returns a toll booth not found response.) Tj
+/F1 11 Tf
+1 0 0 1 72 476 Tm
+(Insufficient balance results in a failed toll transaction.) Tj
+/F1 11 Tf
+1 0 0 1 72 452 Tm
+(Duplicate scans within 60 seconds trigger fraud detection and prevent repeated deduction.) Tj
+/F1 11 Tf
+1 0 0 1 72 428 Tm
+(Global exception handling returns structured error responses instead of raw server errors.) Tj
+/F1 13 Tf
+1 0 0 1 72 400 Tm
+(16. Advantages) Tj
+/F1 11 Tf
+1 0 0 1 72 386 Tm
+(Reduces manual toll collection effort.) Tj
+/F1 11 Tf
+1 0 0 1 72 362 Tm
+(Improves toll transaction speed and transparency.) Tj
+/F1 11 Tf
+1 0 0 1 72 338 Tm
+(Maintains digital records of toll payments.) Tj
+/F1 11 Tf
+1 0 0 1 72 314 Tm
+(Supports user and admin dashboards.) Tj
+/F1 11 Tf
+1 0 0 1 72 290 Tm
+(Provides wallet-based automatic deduction.) Tj
+/F1 11 Tf
+1 0 0 1 72 266 Tm
+(Supports RFID simulation and OCR-based plate detection.) Tj
+/F1 11 Tf
+1 0 0 1 72 242 Tm
+(Can be extended into a real-world toll plaza automation system.) Tj
+/F1 13 Tf
+1 0 0 1 72 214 Tm
+(16A. Applications) Tj
+/F1 11 Tf
+1 0 0 1 72 200 Tm
+(Highway toll plaza automation.) Tj
+/F1 11 Tf
+1 0 0 1 72 176 Tm
+(Smart city transportation systems.) Tj
+/F1 11 Tf
+1 0 0 1 72 152 Tm
+(Campus or private parking toll/payment systems.) Tj
+/F1 10 Tf
+1 0 0 1 500 40 Tm (Page 7 of 11) Tj
+ET
+endstream
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 25 0 R >> >> /Contents 18 0 R >>
+endobj
+18 0 obj
+<< /Length 2794 >>
+stream
+BT
+/F1 12 Tf
+72 0 0 72 0 0 Tm
+/F1 11 Tf
+1 0 0 1 72 766 Tm
+(Vehicle access monitoring systems.) Tj
+/F1 11 Tf
+1 0 0 1 72 742 Tm
+(Automated payment collection prototypes.) Tj
+/F1 11 Tf
+1 0 0 1 72 718 Tm
+(Academic demonstration of full-stack secured applications.) Tj
+/F1 13 Tf
+1 0 0 1 72 690 Tm
+(17. Limitations) Tj
+/F1 11 Tf
+1 0 0 1 72 676 Tm
+(RFID scanning is currently simulated instead of connected to real hardware.) Tj
+/F1 11 Tf
+1 0 0 1 72 652 Tm
+(Wallet recharge is simulated and not connected to a real payment gateway.) Tj
+/F1 11 Tf
+1 0 0 1 72 628 Tm
+(OCR accuracy depends on image quality, lighting, plate angle, and camera clarity.) Tj
+/F1 11 Tf
+1 0 0 1 72 604 Tm
+(The project is currently designed as a prototype and local development system.) Tj
+/F1 13 Tf
+1 0 0 1 72 576 Tm
+(18. Future Enhancements) Tj
+/F1 11 Tf
+1 0 0 1 72 562 Tm
+(Integration with real RFID readers and toll gate sensors.) Tj
+/F1 11 Tf
+1 0 0 1 72 538 Tm
+(Integration with payment gateways, UPI, or FASTag-like systems.) Tj
+/F1 11 Tf
+1 0 0 1 72 514 Tm
+(SMS and email notifications after toll deduction.) Tj
+/F1 11 Tf
+1 0 0 1 72 490 Tm
+(Cloud deployment with production database support.) Tj
+/F1 11 Tf
+1 0 0 1 72 466 Tm
+(Advanced OCR preprocessing and machine learning-based plate recognition.) Tj
+/F1 11 Tf
+1 0 0 1 72 442 Tm
+(Analytics dashboard for booth-wise revenue, traffic, and failed scans.) Tj
+/F1 11 Tf
+1 0 0 1 72 418 Tm
+(Mobile application for vehicle owners.) Tj
+/F1 11 Tf
+1 0 0 1 72 394 Tm
+(QR receipt generation and downloadable toll reports.) Tj
+/F1 13 Tf
+1 0 0 1 72 366 Tm
+(19. Testing Strategy) Tj
+/F1 11 Tf
+1 0 0 1 72 352 Tm
+(API testing can be done using Postman for registration, login, wallet recharge, vehicle) Tj
+/F1 11 Tf
+1 0 0 1 72 338 Tm
+(registration, toll booth creation, and toll scan processing.) Tj
+/F1 11 Tf
+1 0 0 1 72 314 Tm
+(Frontend testing should cover login flow, dashboard navigation, protected routes, wallet) Tj
+/F1 11 Tf
+1 0 0 1 72 300 Tm
+(update, vehicle registration, manual toll scan, camera OCR scan, uploaded-image OCR scan,) Tj
+/F1 11 Tf
+1 0 0 1 72 286 Tm
+(and transaction history.) Tj
+/F1 11 Tf
+1 0 0 1 72 262 Tm
+(Negative test cases should include duplicate email, duplicate RFID tag, invalid vehicle,) Tj
+/F1 11 Tf
+1 0 0 1 72 248 Tm
+(insufficient wallet balance, invalid toll booth, and duplicate scan within 60 seconds.) Tj
+/F1 11 Tf
+1 0 0 1 72 224 Tm
+(Security testing should verify protected route access without token, invalid token handling,) Tj
+/F1 11 Tf
+1 0 0 1 72 210 Tm
+(password encryption, and role-based endpoint behavior.) Tj
+/F1 11 Tf
+1 0 0 1 72 186 Tm
+(Database testing should verify that users, vehicles, toll booths, and transactions are) Tj
+/F1 11 Tf
+1 0 0 1 72 172 Tm
+(correctly saved and related.) Tj
+/F1 10 Tf
+1 0 0 1 500 40 Tm (Page 8 of 11) Tj
+ET
+endstream
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 25 0 R >> >> /Contents 20 0 R >>
+endobj
+20 0 obj
+<< /Length 3224 >>
+stream
+BT
+/F1 12 Tf
+72 0 0 72 0 0 Tm
+/F1 11 Tf
+1 0 0 1 72 776 Tm
+(OCR testing should use clear plate images, low-light images, angled images, and invalid) Tj
+/F1 11 Tf
+1 0 0 1 72 762 Tm
+(images to evaluate detection behavior.) Tj
+/F1 13 Tf
+1 0 0 1 72 734 Tm
+(19A. Sample Test Cases) Tj
+/F1 11 Tf
+1 0 0 1 72 720 Tm
+(TC-01: Register a new user with valid details. Expected result: User is created) Tj
+/F1 11 Tf
+1 0 0 1 72 706 Tm
+(successfully.) Tj
+/F1 11 Tf
+1 0 0 1 72 682 Tm
+(TC-02: Register with an existing email. Expected result: System rejects duplicate email.) Tj
+/F1 11 Tf
+1 0 0 1 72 658 Tm
+(TC-03: Login with valid credentials. Expected result: JWT token and user details are) Tj
+/F1 11 Tf
+1 0 0 1 72 644 Tm
+(returned.) Tj
+/F1 11 Tf
+1 0 0 1 72 620 Tm
+(TC-04: Add positive wallet amount. Expected result: Wallet balance increases.) Tj
+/F1 11 Tf
+1 0 0 1 72 596 Tm
+(TC-05: Register vehicle with unique number and RFID. Expected result: Vehicle is stored.) Tj
+/F1 11 Tf
+1 0 0 1 72 572 Tm
+(TC-06: Register vehicle with duplicate RFID. Expected result: Request is rejected.) Tj
+/F1 11 Tf
+1 0 0 1 72 548 Tm
+(TC-07: Process toll with valid RFID and sufficient balance. Expected result: Toll is) Tj
+/F1 11 Tf
+1 0 0 1 72 534 Tm
+(deducted and SUCCESS transaction is stored.) Tj
+/F1 11 Tf
+1 0 0 1 72 510 Tm
+(TC-08: Process toll with insufficient balance. Expected result: FAILED transaction is stored) Tj
+/F1 11 Tf
+1 0 0 1 72 496 Tm
+(and error is returned.) Tj
+/F1 11 Tf
+1 0 0 1 72 472 Tm
+(TC-09: Repeat same scan within 60 seconds. Expected result: Duplicate scan detection) Tj
+/F1 11 Tf
+1 0 0 1 72 458 Tm
+(prevents repeated deduction.) Tj
+/F1 11 Tf
+1 0 0 1 72 434 Tm
+(TC-10: Upload a clear number plate image. Expected result: OCR detects plate and submits) Tj
+/F1 11 Tf
+1 0 0 1 72 420 Tm
+(toll scan.) Tj
+/F1 13 Tf
+1 0 0 1 72 392 Tm
+(19B. Feasibility Study) Tj
+/F1 11 Tf
+1 0 0 1 72 378 Tm
+(Technical Feasibility: The project is technically feasible because it uses widely available) Tj
+/F1 11 Tf
+1 0 0 1 72 364 Tm
+(technologies such as Spring Boot, React, MySQL, JWT, and OCR libraries. It can run on a) Tj
+/F1 11 Tf
+1 0 0 1 72 350 Tm
+(normal laptop for development and demonstration.) Tj
+/F1 11 Tf
+1 0 0 1 72 326 Tm
+(Operational Feasibility: The system is easy to operate through web dashboards. Users can) Tj
+/F1 11 Tf
+1 0 0 1 72 312 Tm
+(manage their wallet and vehicles, while admins can manage toll booths and transactions.) Tj
+/F1 11 Tf
+1 0 0 1 72 288 Tm
+(Economic Feasibility: The prototype uses open-source tools and libraries, reducing) Tj
+/F1 11 Tf
+1 0 0 1 72 274 Tm
+(development cost. Future production deployment may require server, hardware, and payment) Tj
+/F1 11 Tf
+1 0 0 1 72 260 Tm
+(gateway costs.) Tj
+/F1 11 Tf
+1 0 0 1 72 236 Tm
+(Schedule Feasibility: The project can be developed module by module, starting from) Tj
+/F1 11 Tf
+1 0 0 1 72 222 Tm
+(authentication and then moving to vehicle, wallet, toll booth, toll scan, OCR, and reporting) Tj
+/F1 11 Tf
+1 0 0 1 72 208 Tm
+(features.) Tj
+/F1 13 Tf
+1 0 0 1 72 180 Tm
+(19C. Deployment Considerations) Tj
+/F1 11 Tf
+1 0 0 1 72 166 Tm
+(Backend can be packaged using Maven and deployed on platforms such as Render, AWS EC2,) Tj
+/F1 10 Tf
+1 0 0 1 500 40 Tm (Page 9 of 11) Tj
+ET
+endstream
+endobj
+21 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 25 0 R >> >> /Contents 22 0 R >>
+endobj
+22 0 obj
+<< /Length 3362 >>
+stream
+BT
+/F1 12 Tf
+72 0 0 72 0 0 Tm
+/F1 11 Tf
+1 0 0 1 72 776 Tm
+(Railway, or a local server.) Tj
+/F1 11 Tf
+1 0 0 1 72 752 Tm
+(Frontend can be built using npm run build and deployed on Vercel, Netlify, or any static) Tj
+/F1 11 Tf
+1 0 0 1 72 738 Tm
+(hosting provider.) Tj
+/F1 11 Tf
+1 0 0 1 72 714 Tm
+(MySQL database should be hosted securely with proper credentials and backup strategy.) Tj
+/F1 11 Tf
+1 0 0 1 72 690 Tm
+(JWT secret and database password should be moved to environment variables before production) Tj
+/F1 11 Tf
+1 0 0 1 72 676 Tm
+(deployment.) Tj
+/F1 11 Tf
+1 0 0 1 72 652 Tm
+(HTTPS should be used in production to protect authentication and payment-related data.) Tj
+/F1 13 Tf
+1 0 0 1 72 624 Tm
+(19D. Risks and Mitigation) Tj
+/F1 11 Tf
+1 0 0 1 72 610 Tm
+(OCR Accuracy Risk: Use better image preprocessing, stronger lighting, and advanced ANPR) Tj
+/F1 11 Tf
+1 0 0 1 72 596 Tm
+(models in future versions.) Tj
+/F1 11 Tf
+1 0 0 1 72 572 Tm
+(Payment Security Risk: Use certified payment gateways instead of simulated wallet recharge) Tj
+/F1 11 Tf
+1 0 0 1 72 558 Tm
+(in production.) Tj
+/F1 11 Tf
+1 0 0 1 72 534 Tm
+(Hardware Integration Risk: Test with real RFID readers in stages before live deployment.) Tj
+/F1 11 Tf
+1 0 0 1 72 510 Tm
+(Database Failure Risk: Use backups, indexing, and reliable hosting for production database.) Tj
+/F1 11 Tf
+1 0 0 1 72 486 Tm
+(Unauthorized Access Risk: Strengthen role checks, token expiry handling, and secure API) Tj
+/F1 11 Tf
+1 0 0 1 72 472 Tm
+(configuration.) Tj
+/F1 13 Tf
+1 0 0 1 72 444 Tm
+(19E. Report Preparation Reference) Tj
+/F1 11 Tf
+1 0 0 1 72 430 Tm
+(Recommended report chapters: Introduction, Literature Review or Existing System, System) Tj
+/F1 11 Tf
+1 0 0 1 72 416 Tm
+(Analysis, Requirement Specification, System Design, Implementation, Testing, Results, Future) Tj
+/F1 11 Tf
+1 0 0 1 72 402 Tm
+(Scope, and Conclusion.) Tj
+/F1 11 Tf
+1 0 0 1 72 378 Tm
+(Recommended screenshots: login page, registration page, user dashboard, wallet recharge,) Tj
+/F1 11 Tf
+1 0 0 1 72 364 Tm
+(vehicle registration, admin dashboard, toll booth creation, toll scan simulator, OCR) Tj
+/F1 11 Tf
+1 0 0 1 72 350 Tm
+(upload/camera scan, successful toll deduction, failed toll scan, and transaction history.) Tj
+/F1 11 Tf
+1 0 0 1 72 326 Tm
+(Recommended diagrams: system architecture diagram, use case diagram, ER diagram, data flow) Tj
+/F1 11 Tf
+1 0 0 1 72 312 Tm
+(diagram, activity diagram for toll scan, sequence diagram for login, and sequence diagram) Tj
+/F1 11 Tf
+1 0 0 1 72 298 Tm
+(for toll deduction.) Tj
+/F1 13 Tf
+1 0 0 1 72 270 Tm
+(20. Expected Outcome) Tj
+/F1 11 Tf
+1 0 0 1 72 256 Tm
+(The expected outcome is a working smart toll prototype that identifies registered vehicles,) Tj
+/F1 11 Tf
+1 0 0 1 72 242 Tm
+(performs automatic toll deduction, records transaction history, and provides monitoring) Tj
+/F1 11 Tf
+1 0 0 1 72 228 Tm
+(features for users and administrators. The project demonstrates how web technologies, secure) Tj
+/F1 11 Tf
+1 0 0 1 72 214 Tm
+(backend APIs, database persistence, wallet logic, and OCR can be combined for intelligent) Tj
+/F1 11 Tf
+1 0 0 1 72 200 Tm
+(transportation automation.) Tj
+/F1 13 Tf
+1 0 0 1 72 172 Tm
+(21. Conclusion) Tj
+/F1 11 Tf
+1 0 0 1 72 158 Tm
+(The Smart Toll Collection System is a practical and effective prototype for digital toll) Tj
+/F1 10 Tf
+1 0 0 1 500 40 Tm (Page 10 of 11) Tj
+ET
+endstream
+endobj
+23 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 25 0 R >> >> /Contents 24 0 R >>
+endobj
+24 0 obj
+<< /Length 2875 >>
+stream
+BT
+/F1 12 Tf
+72 0 0 72 0 0 Tm
+/F1 11 Tf
+1 0 0 1 72 776 Tm
+(automation. It combines secure authentication, role-based access, wallet management, vehicle) Tj
+/F1 11 Tf
+1 0 0 1 72 762 Tm
+(registration, RFID/plate-based toll scanning, OCR support, automatic deduction, fraud) Tj
+/F1 11 Tf
+1 0 0 1 72 748 Tm
+(detection, and transaction monitoring. The system provides a strong foundation for future) Tj
+/F1 11 Tf
+1 0 0 1 72 734 Tm
+(intelligent transportation and smart city toll management solutions.) Tj
+/F1 13 Tf
+1 0 0 1 72 706 Tm
+(Appendix: ChatGPT Prompt for Full Synopsis) Tj
+/F1 11 Tf
+1 0 0 1 72 692 Tm
+(Create a complete academic project synopsis for my project titled Smart Toll Collection) Tj
+/F1 11 Tf
+1 0 0 1 72 678 Tm
+(System.) Tj
+/F1 11 Tf
+1 0 0 1 72 654 Tm
+(Use these details: It is a full-stack web application that automates toll collection using) Tj
+/F1 11 Tf
+1 0 0 1 72 640 Tm
+(RFID-based vehicle identification and number plate recognition support. It has a Spring Boot) Tj
+/F1 11 Tf
+1 0 0 1 72 626 Tm
+(backend and React frontend. Users can register, log in, add wallet balance, register) Tj
+/F1 11 Tf
+1 0 0 1 72 612 Tm
+(vehicles, link RFID tags, and view toll transactions. Admins can manage toll booths, monitor) Tj
+/F1 11 Tf
+1 0 0 1 72 598 Tm
+(vehicles, and view all transactions. Toll scans are simulated through RFID/manual input and) Tj
+/F1 11 Tf
+1 0 0 1 72 584 Tm
+(also through OCR-based number plate detection using camera or uploaded images. When a valid) Tj
+/F1 11 Tf
+1 0 0 1 72 570 Tm
+(vehicle is scanned, the backend identifies the vehicle, verifies the toll booth, checks) Tj
+/F1 11 Tf
+1 0 0 1 72 556 Tm
+(wallet balance, deducts the toll amount, and stores the transaction. Failed transactions are) Tj
+/F1 11 Tf
+1 0 0 1 72 542 Tm
+(also recorded. The system includes duplicate scan fraud detection within 60 seconds.) Tj
+/F1 11 Tf
+1 0 0 1 72 518 Tm
+(Technology stack: Java, Spring Boot 3.3.5, Spring Security, JWT, Spring Data JPA, Hibernate,) Tj
+/F1 11 Tf
+1 0 0 1 72 504 Tm
+(Lombok, Maven, MySQL, React 18, Vite, Tailwind CSS, Axios, React Router, and Tesseract.js.) Tj
+/F1 11 Tf
+1 0 0 1 72 480 Tm
+(Generate the synopsis with these sections: Title, Introduction, Problem Statement,) Tj
+/F1 11 Tf
+1 0 0 1 72 466 Tm
+(Objectives, Scope, Existing System, Proposed System, Features, Technology Used, Hardware and) Tj
+/F1 11 Tf
+1 0 0 1 72 452 Tm
+(Software Requirements, System Architecture, Module Description, Database Design Overview,) Tj
+/F1 11 Tf
+1 0 0 1 72 438 Tm
+(Working of the System, Security Features, Advantages, Limitations, Future Enhancements,) Tj
+/F1 11 Tf
+1 0 0 1 72 424 Tm
+(Testing Strategy, and Conclusion.) Tj
+/F1 11 Tf
+1 0 0 1 72 400 Tm
+(Write it in a formal college-project format. Keep it detailed, clear, technical, and) Tj
+/F1 11 Tf
+1 0 0 1 72 386 Tm
+(suitable for submission.) Tj
+/F1 10 Tf
+1 0 0 1 500 40 Tm (Page 11 of 11) Tj
+ET
+endstream
+endobj
+25 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 26
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000185 00000 n 
+0000000312 00000 n 
+0000003933 00000 n 
+0000004060 00000 n 
+0000007571 00000 n 
+0000007698 00000 n 
+0000010556 00000 n 
+0000010684 00000 n 
+0000014153 00000 n 
+0000014282 00000 n 
+0000017502 00000 n 
+0000017631 00000 n 
+0000020539 00000 n 
+0000020668 00000 n 
+0000023174 00000 n 
+0000023303 00000 n 
+0000026150 00000 n 
+0000026279 00000 n 
+0000029556 00000 n 
+0000029685 00000 n 
+0000033100 00000 n 
+0000033229 00000 n 
+0000036157 00000 n 
+trailer
+<< /Size 26 /Root 1 0 R >>
+startxref
+36228
+%%EOF
